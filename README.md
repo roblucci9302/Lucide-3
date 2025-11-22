@@ -1,235 +1,481 @@
-<p align="center">
-  <a href="https://pickle.com/glass">
-   <img src="./public/assets/banner.gif" alt="Logo">
-  </a>
+# Lucide
 
-  <h1 align="center">Glass by Pickle: Digital Mind Extension 🧠</h1>
+**Assistant IA Contextuel et Ultra-Personnalisé**
 
-</p>
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-0.2.4-green.svg)](package.json)
 
-<p align="center">
-  <a href="https://github.com/roblucci9302/Lucidi/actions/workflows/integration-tests.yml">
-    <img src="https://github.com/roblucci9302/Lucidi/actions/workflows/integration-tests.yml/badge.svg" alt="Integration Tests">
-  </a>
-  <a href="https://github.com/roblucci9302/Lucidi/actions/workflows/unit-tests.yml">
-    <img src="https://github.com/roblucci9302/Lucidi/actions/workflows/unit-tests.yml/badge.svg" alt="Unit Tests">
-  </a>
-  <a href="https://github.com/roblucci9302/Lucidi/actions/workflows/build.yml">
-    <img src="https://github.com/roblucci9302/Lucidi/actions/workflows/build.yml/badge.svg" alt="Build">
-  </a>
-</p>
+---
 
-<p align="center">
-  <a href="https://discord.gg/UCZH5B5Hpd"><img src="./public/assets/button_dc.png" width="80" alt="Pickle Discord"></a>&ensp;<a href="https://pickle.com"><img src="./public/assets/button_we.png" width="105" alt="Pickle Website"></a>&ensp;<a href="https://x.com/intent/user?screen_name=leinadpark"><img src="./public/assets/button_xe.png" width="109" alt="Follow Daniel"></a>
-</p>
+## 📖 Qu'est-ce que Lucide ?
 
-> This project is a fork of [CheatingDaddy](https://github.com/sohzm/cheating-daddy) with modifications and enhancements. Thanks to [Soham](https://x.com/soham_btw) and all the open-source contributors who made this possible!
+**Lucide** est un assistant intelligent nouvelle génération qui vous connaît vraiment. Contrairement aux assistants IA classiques qui oublient tout entre chaque conversation, Lucide construit une mémoire complète de vos interactions, comprend votre contexte professionnel et s'adapte à vos besoins spécifiques.
 
-🤖 **Fast, light & open-source**—Glass lives on your desktop, sees what you see, listens in real time, understands your context, and turns every moment into structured knowledge.
+### Le Problème des Assistants IA Classiques
 
-💬 **Proactive in meetings**—it surfaces action items, summaries, and answers the instant you need them.
+Avec ChatGPT, Claude ou d'autres assistants IA, vous devez :
+- ❌ Réexpliquer votre contexte à chaque nouvelle conversation
+- ❌ Décrire qui vous êtes, votre entreprise, votre secteur d'activité
+- ❌ Répéter vos objectifs et contraintes à chaque fois
+- ❌ Adapter manuellement les réponses génériques à votre situation
 
-🫥️ **Truly invisible**—never shows up in screen recordings, screenshots, or your dock; no always-on capture or hidden sharing.
+### La Solution Lucide
 
-To have fun building with us, join our [Discord](https://discord.gg/UCZH5B5Hpd)!
+**Lucide est votre assistant personnel qui vous connaît.**
 
-## Instant Launch
+- ✅ **Mémoire Complète** : Se souvient de toutes vos conversations, documents et interactions
+- ✅ **Contextuel** : Connaît votre industrie, votre rôle, vos projets en cours
+- ✅ **9 Experts Spécialisés** : Se transforme selon vos besoins (RH, CEO, IT, Marketing, etc.)
+- ✅ **Offline-First** : Fonctionne sans connexion internet
+- ✅ **Sécurisé** : Vos données restent sur votre machine
 
-⚡️  Skip the setup—launch instantly with our ready-to-run macOS app.  [[Download Here]](https://www.dropbox.com/scl/fi/znid09apxiwtwvxer6oc9/Glass_latest.dmg?rlkey=gwvvyb3bizkl25frhs4k1zwds&st=37q31b4w&dl=1)
+---
 
-## Quick Start (Local Build)
+## 🎯 Fonctionnalités Principales
 
-### Prerequisites
+### 1. Système de Profils d'Experts
 
-First download & install [Python](https://www.python.org/downloads/) and [Node](https://nodejs.org/en/download).
-If you are using Windows, you need to also install [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/)
+Lucide intègre **9 profils d'experts spécialisés** qui s'adaptent automatiquement à votre contexte :
 
-Ensure you're using Node.js version 20.x.x to avoid build errors with native dependencies.
+| Profil | Spécialisation | Cas d'usage |
+|--------|----------------|-------------|
+| **👩‍💼 Lucy RH** | Ressources Humaines | Recrutement, offres d'emploi, plans d'onboarding, gestion de conflits |
+| **🎯 Lucy CEO** | Stratégie d'entreprise | Plans stratégiques, rapports trimestriels, pitch decks, vision |
+| **💻 Lucy IT** | Technologie | Architecture logicielle, debugging, code review, spécifications techniques |
+| **📱 Lucy Marketing** | Marketing Digital | Stratégies de campagne, plans de contenu, analyses de marché |
+| **💼 Lucy Sales** | Ventes | Scripts de prospection, propositions commerciales, négociation |
+| **👥 Lucy Manager** | Management | Gestion d'équipe, feedback, motivation, résolution de problèmes |
+| **💰 Lucy Finance** | Finance & Comptabilité | Budgets, prévisions, analyses financières, optimisation fiscale |
+| **⚖️ Lucy Legal** | Juridique | Contrats, conformité RGPD, mentions légales, CGV |
+| **📚 Lucy Formation** | Formation & Pédagogie | Programmes de formation, évaluations, supports pédagogiques |
+
+### 2. Mémoire Augmentée Multi-Sources
+
+Lucide indexe et mémorise automatiquement :
+
+- **💬 Conversations** : Toutes vos interactions avec l'assistant
+- **📄 Documents** : Upload et analyse de PDF, DOCX, TXT, Markdown
+- **🖼️ Images** : Screenshots avec OCR automatique
+- **🎤 Audio** : Transcription et indexation de vos enregistrements
+- **🗄️ Bases de données externes** : Connexion à PostgreSQL, MySQL, APIs REST
+
+**Recherche sémantique intelligente** : Lucide retrouve l'information pertinente même si vous utilisez des termes différents.
+
+### 3. Génération de Documents Professionnels
+
+Créez des documents prêts à l'emploi en quelques secondes :
+
+- **📄 Export PDF** : Documents formatés professionnellement avec mise en page
+- **📝 Export DOCX** : Fichiers Word éditables avec styles natifs
+- **📋 Export Markdown** : Format texte structuré et portable
+
+**Types de documents supportés** :
+- CV et lettres de motivation
+- Rapports d'activité
+- Présentations et pitch decks
+- Contrats et documents juridiques
+- Plans stratégiques
+- Offres d'emploi
+- Propositions commerciales
+
+### 4. Connexion aux Données Existantes
+
+Importez votre contexte de travail existant :
+
+- **PostgreSQL** : Bases de données d'entreprise
+- **MySQL** : Systèmes de gestion
+- **SQLite** : Bases de données locales
+- **APIs REST** : Services tiers
+
+### 5. Interface Moderne et Intuitive
+
+- **Raccourcis clavier** : Accès rapide et navigation efficace
+- **Mode Focus** : Interface épurée sans distractions
+- **Multi-fenêtres** : Travaillez sur plusieurs conversations simultanément
+- **Thèmes personnalisables** : Adaptez l'interface à vos préférences
+
+---
+
+## 🚀 Installation
+
+### Prérequis
+
+- **Node.js** version 20.x.x ([Télécharger](https://nodejs.org/))
+- **Python** 3.x ([Télécharger](https://www.python.org/downloads/))
+- **Windows** : Build Tools for Visual Studio ([Télécharger](https://visualstudio.microsoft.com/downloads/))
+
+### Installation Rapide
 
 ```bash
-# Check your Node.js version
+# 1. Cloner le dépôt
+git clone https://github.com/roblucci9302/Lucide-3.git
+cd Lucide-3
+
+# 2. Vérifier la version de Node.js
 node --version
+# Doit afficher v20.x.x
 
-# If you need to install Node.js 20.x.x, we recommend using nvm:
-# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-# nvm install 20
-# nvm use 20
-```
-
-### Installation
-
-```bash
+# 3. Installation automatique
 npm run setup
 ```
 
-### Optional Dependencies
+La commande `npm run setup` va :
+- Installer toutes les dépendances Node.js
+- Configurer l'environnement
+- Construire l'interface web
+- Lancer l'application
 
-Lucidi uses a graceful degradation system for optional dependencies. The core application works without them, but certain features require specific modules:
+### Configuration
 
-| Module | Purpose | Required For |
-|--------|---------|-------------|
-| `uuid` | ID generation | Document indexing, knowledge graph |
-| `better-sqlite3` | Native SQLite | Full database functionality |
-| `pg` | PostgreSQL driver | PostgreSQL external data sources |
-| `mysql2` | MySQL driver | MySQL external data sources |
-
-**Install optional dependencies as needed:**
+1. **Copier le fichier d'environnement** :
 ```bash
-# All optional dependencies
-npm install uuid better-sqlite3 pg mysql2
-
-# Or individually
-npm install uuid          # For document services
-npm install pg            # For PostgreSQL support
-npm install mysql2        # For MySQL support
+cp .env.example .env.local
 ```
 
-Without these modules, the application will use lightweight mocks and show informational warnings. See [DEPENDENCY_MANAGEMENT.md](./DEPENDENCY_MANAGEMENT.md) for details.
+2. **Configurer vos clés API** dans `.env.local` :
+```env
+# OpenAI (recommandé)
+OPENAI_API_KEY=votre_cle_openai
 
-### Integration Testing with Docker
+# Ou Gemini
+GEMINI_API_KEY=votre_cle_gemini
 
-Lucidi provides Docker-based integration testing for PostgreSQL and MySQL:
+# Ou Claude
+ANTHROPIC_API_KEY=votre_cle_anthropic
 
-**Quick Start:**
+# Firebase (optionnel - pour la synchronisation cloud)
+FIREBASE_API_KEY=votre_cle_firebase
+FIREBASE_AUTH_DOMAIN=votre_domaine.firebaseapp.com
+FIREBASE_PROJECT_ID=votre_projet_id
+```
+
+3. **Obtenir vos clés API** :
+- OpenAI : [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+- Gemini : [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+- Claude/Anthropic : [console.anthropic.com](https://console.anthropic.com)
+
+---
+
+## 🎮 Utilisation
+
+### Démarrer Lucide
+
 ```bash
-# Start test databases
+npm start
+```
+
+### Raccourcis Clavier
+
+| Raccourci | Action |
+|-----------|--------|
+| `Ctrl/Cmd + \` | Afficher/Masquer la fenêtre principale |
+| `Ctrl/Cmd + Enter` | Envoyer un message |
+| `Ctrl/Cmd + Flèches` | Déplacer la fenêtre |
+| `Ctrl/Cmd + ,` | Ouvrir les paramètres |
+
+### Workflow Typique
+
+1. **Définir votre contexte** :
+   ```
+   Je suis CEO d'une startup SaaS de 15 personnes dans le secteur FinTech.
+   Nous sommes en phase de levée de fonds Série A.
+   ```
+
+2. **Choisir un profil expert** :
+   - Basculer vers "Lucy CEO" pour la stratégie
+   - Basculer vers "Lucy Finance" pour les budgets
+   - Basculer vers "Lucy RH" pour le recrutement
+
+3. **Uploader vos documents** :
+   - Glissez-déposez vos PDF, DOCX, images
+   - Lucide analyse et indexe automatiquement
+
+4. **Poser vos questions** :
+   - Lucide mobilise automatiquement le contexte pertinent
+   - Répond avec des informations ultra-personnalisées
+
+5. **Générer des documents** :
+   - Demandez un pitch deck, un plan stratégique, une offre d'emploi
+   - Exportez en PDF, DOCX ou Markdown
+
+---
+
+## 🏗️ Architecture Technique
+
+Lucide est construit avec les technologies suivantes :
+
+- **Frontend** : Lit Elements (Web Components), JavaScript moderne
+- **Backend** : Electron (Node.js)
+- **Base de données** : SQLite (local), Firebase (sync cloud optionnel)
+- **IA** : OpenAI GPT-4, Google Gemini, Anthropic Claude
+- **Document Processing** : pdf-parse, mammoth, tesseract.js (OCR)
+- **Document Generation** : pdfkit, docx
+
+### Dépendances Optionnelles
+
+Certaines fonctionnalités nécessitent des modules optionnels :
+
+```bash
+# Support complet des bases de données
+npm install better-sqlite3 pg mysql2
+
+# Génération d'IDs uniques
+npm install uuid
+```
+
+Sans ces modules, Lucide fonctionne en mode dégradé avec des mocks légers.
+
+---
+
+## 🧪 Tests
+
+### Tests d'Intégration avec Docker
+
+```bash
+# Démarrer les bases de données de test
 npm run docker:start
 
-# Run integration tests
+# Lancer tous les tests d'intégration
 npm run test:integration
 
-# Stop test databases
+# Tests spécifiques
+npm run test:integration:postgres    # PostgreSQL uniquement
+npm run test:integration:mysql       # MySQL uniquement
+npm run test:integration:sqlite      # SQLite uniquement
+
+# Arrêter les conteneurs
 npm run docker:stop
 ```
 
-**Available commands:**
-- `npm run docker:start` - Start PostgreSQL, MySQL, Redis containers
-- `npm run docker:stop` - Stop all containers
-- `npm run docker:reset` - Reset and restart with fresh data
-- `npm run docker:health` - Check service health status
-- `npm run test:integration` - Run all integration tests (PostgreSQL + MySQL + SQLite)
-- `npm run test:integration:postgres` - PostgreSQL tests only (10 tests)
-- `npm run test:integration:mysql` - MySQL tests only (10 tests)
-- `npm run test:integration:sqlite` - SQLite tests only (10 tests)
-- `npm run deps:check` - Check which dependencies are installed
-- `npm run deps:status` - Check database service health
+**Couverture** : 30 tests d'intégration (PostgreSQL: 10, MySQL: 10, SQLite: 10)
 
-**Requirements:**
-- Docker Desktop installed and running
-- Ports 5432 (PostgreSQL), 3306 (MySQL), 6379 (Redis) available
-- Optional: `npm install pg mysql2 better-sqlite3` for real database testing
+### Autres Commandes de Test
 
-**Test Coverage:** 30 integration tests (PostgreSQL: 10, MySQL: 10, SQLite: 10)
+```bash
+# Vérifier les dépendances installées
+npm run deps:check
 
-See [PHASE_3_PLAN_AND_ROADMAP.md](./PHASE_3_PLAN_AND_ROADMAP.md) for complete documentation.
-See [tests/README.md](./tests/README.md) for testing guide.
+# Vérifier la santé des services
+npm run deps:status
 
-### Continuous Integration (CI/CD)
+# Réinitialiser les bases de test
+npm run docker:reset
+```
 
-Lucidi uses GitHub Actions for automated testing and quality assurance:
+---
 
-**Workflows:**
-- **Integration Tests** - Automated database testing with PostgreSQL, MySQL, and SQLite
-  - Runs on every push to `main`, `develop`, and `claude/**` branches
-  - Uses GitHub Actions services for PostgreSQL and MySQL
-  - Tests all 30 integration tests across 3 database systems
-  - View workflow: [.github/workflows/integration-tests.yml](.github/workflows/integration-tests.yml)
+## 🔒 Sécurité et Confidentialité
 
-- **Unit Tests** - Code quality and validation
-  - Linting with ESLint
-  - Security audit with npm audit
-  - Test helpers and utilities validation
-  - Build validation (package.json, test files)
-  - View workflow: [.github/workflows/unit-tests.yml](.github/workflows/unit-tests.yml)
+### Sécurité des Données
 
-**Status badges** (shown at top of README) indicate current test status:
-- ![Integration Tests](https://github.com/roblucci9302/Lucidi/actions/workflows/integration-tests.yml/badge.svg)
-- ![Unit Tests](https://github.com/roblucci9302/Lucidi/actions/workflows/unit-tests.yml/badge.svg)
-- ![Build](https://github.com/roblucci9302/Lucidi/actions/workflows/build.yml/badge.svg)
+- **✅ Local-First** : Vos données restent sur votre machine par défaut
+- **✅ Chiffrement** : Les données sensibles sont chiffrées
+- **✅ Isolation utilisateur** : Chaque utilisateur a sa propre base de données
+- **✅ RGPD-Compliant** : Règles Firestore strictes pour la synchronisation cloud
 
-**Running workflows manually:**
-- Go to [Actions tab](https://github.com/roblucci9302/Lucidi/actions)
-- Select workflow (Integration Tests or Unit Tests)
-- Click "Run workflow" button
+### Configuration Recommandée
 
-## Highlights
+1. **Régénérez vos clés API** si vous utilisez un fork public
+2. **Ne commitez JAMAIS** votre fichier `.env.local`
+3. **Activez l'authentification** Firebase pour la sync cloud
+4. **Revoyez les permissions** Firestore dans `firestore.rules`
 
+Pour plus de détails, consultez [SECURITY.md](./SECURITY.md).
 
-### Ask: get answers based on all your previous screen actions & audio
+---
 
-<img width="100%" alt="booking-screen" src="./public/assets/00.gif">
+## 📊 Fonctionnalités Avancées
 
-### Meetings: real-time meeting notes, live summaries, session records
+### 1. Système de Workflows
 
-<img width="100%" alt="booking-screen" src="./public/assets/01.gif">
+Créez des workflows automatisés pour vos tâches récurrentes :
 
-### Use your own API key, or sign up to use ours (free)
+- Templates de documents pré-configurés
+- Pipelines de traitement de données
+- Automatisation de tâches répétitives
 
-<img width="100%" alt="booking-screen" src="./public/assets/02.gif">
+### 2. Knowledge Graph
 
-**Currently Supporting:**
-- OpenAI API: Get OpenAI API Key [here](https://platform.openai.com/api-keys)
-- Gemini API: Get Gemini API Key [here](https://aistudio.google.com/apikey)
-- Local LLM Ollama & Whisper
+Lucide construit un graphe de connaissances de vos informations :
 
-### Liquid Glass Design (coming soon)
+- Relations entre projets, personnes, concepts
+- Navigation sémantique
+- Découverte de connexions cachées
 
-<img width="100%" alt="booking-screen" src="./public/assets/03.gif">
+### 3. RAG Multi-Sources
 
-<p>
-  for a more detailed guide, please refer to this <a href="https://www.youtube.com/watch?v=qHg3_4bU1Dw">video.</a>
-  <i style="color:gray; font-weight:300;">
-    we don't waste money on fancy vids; we just code.
-  </i>
-</p>
+Système de Retrieval-Augmented Generation avancé :
 
+- Récupération contextuelle intelligente
+- Fusion de multiples sources de données
+- Classement par pertinence
 
-## Keyboard Shortcuts
+### 4. API Extensible
 
-`Ctrl/Cmd + \` : show and hide main window
+Intégrez Lucide avec vos outils existants :
 
-`Ctrl/Cmd + Enter` : ask AI using all your previous screen and audio
+- Endpoints REST pour automatisation
+- Webhooks pour événements
+- Plugins personnalisés
 
-`Ctrl/Cmd + Arrows` : move main window position
+---
 
-## Repo Activity
+## 🛠️ Développement
 
-![Alt](https://repobeats.axiom.co/api/embed/a23e342faafa84fa8797fa57762885d82fac1180.svg "Repobeats analytics image")
+### Structure du Projet
 
-## Contributing
+```
+Lucide-3/
+├── src/
+│   ├── features/          # Fonctionnalités principales
+│   │   ├── ask/           # Interface de conversation
+│   │   ├── knowledge/     # Système de mémoire
+│   │   ├── listen/        # Transcription audio
+│   │   ├── memory/        # Indexation et recherche
+│   │   └── settings/      # Configuration
+│   ├── bridge/            # IPC Electron (Main ↔ Renderer)
+│   └── ui/                # Composants d'interface
+├── web/                   # Application React
+├── tests/                 # Tests unitaires et d'intégration
+├── docker/                # Configuration Docker pour les tests
+└── docs/                  # Documentation technique
+```
 
-We love contributions! Feel free to open issues for bugs or feature requests. For detailed guide, please see our [contributing guide](/CONTRIBUTING.md).
-> Currently, we're working on a full code refactor and modularization. Once that's completed, we'll jump into addressing the major issues.
+### Commandes de Développement
 
-### Contributors
+```bash
+# Développement avec rechargement automatique
+npm run watch:renderer
 
-<a href="https://github.com/pickle-com/glass/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pickle-com/glass" />
-</a>
+# Build de production
+npm run build
 
-### Help Wanted Issues
+# Création de l'exécutable
+npm run make
 
-We have a list of [help wanted](https://github.com/pickle-com/glass/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22%F0%9F%99%8B%E2%80%8D%E2%99%82%EF%B8%8Fhelp%20wanted%22) that contain small features and bugs which have a relatively limited scope. This is a great place to get started, gain experience, and get familiar with our contribution process.
+# Packaging multi-plateformes
+npm run build:win          # Windows
+npm run package            # Toutes plateformes
+```
 
+### Contribuer
 
-### 🛠 Current Issues & Improvements
+Nous accueillons toutes les contributions ! Consultez [CONTRIBUTING.md](./CONTRIBUTING.md) pour :
 
-| Status | Issue                          | Description                                       |
-|--------|--------------------------------|---------------------------------------------------|
-| 🚧 WIP      | Liquid Glass                    | Liquid Glass UI for MacOS 26 |
+- Guidelines de contribution
+- Standards de code
+- Processus de Pull Request
+- Code de conduite
 
-### Changelog
+---
 
-- Jul 5: Now support Gemini, Intel Mac supported
-- Jul 6: Full code refactoring has done.
-- Jul 7: Now support Claude, LLM/STT model selection
-- Jul 8: Now support Windows(beta), Improved AEC by Rust(to seperate mic/system audio), shortcut editing(beta)
-- Jul 8: Now support Local LLM & STT, Firebase Data Storage 
+## 📚 Documentation
 
+### Guides Techniques
 
-## About Pickle
+- [ARCHITECTURE_DOCUMENTS.md](./ARCHITECTURE_DOCUMENTS.md) - Architecture du système de documents
+- [PHASE_2_MEMOIRE_AUGMENTEE_PLAN_DETAILLE.md](./PHASE_2_MEMOIRE_AUGMENTEE_PLAN_DETAILLE.md) - Système de mémoire
+- [PHASE_3_PLAN_AND_ROADMAP.md](./PHASE_3_PLAN_AND_ROADMAP.md) - Roadmap et planification
+- [DEPENDENCY_MANAGEMENT.md](./DEPENDENCY_MANAGEMENT.md) - Gestion des dépendances
 
-**Our mission is to build a living digital clone for everyone.** Glass is part of Step 1—a trusted pipeline that transforms your daily data into a scalable clone. Visit [pickle.com](https://pickle.com) to learn more.
+### Guides d'Utilisation
 
-## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=pickle-com/glass&type=Date)](https://www.star-history.com/#pickle-com/glass&Date)
+- [GUIDE_WORKFLOW_DOCUMENTS.md](./GUIDE_WORKFLOW_DOCUMENTS.md) - Workflows de documents
+- [GUIDE_DE_TEST_UPLOADS.md](./GUIDE_DE_TEST_UPLOADS.md) - Tests d'upload
+- [FORMATAGE_AVANCE.md](./FORMATAGE_AVANCE.md) - Formatage de documents
+
+### Rapports de Validation
+
+- [PHASE1_VALIDATION_REPORT.md](./PHASE1_VALIDATION_REPORT.md) - Validation Phase 1
+- [PHASE2_VALIDATION_REPORT.md](./PHASE2_VALIDATION_REPORT.md) - Validation Phase 2
+- [PHASE3_VALIDATION_REPORT.md](./PHASE3_VALIDATION_REPORT.md) - Validation Phase 3
+- [PHASE4_VALIDATION_REPORT.md](./PHASE4_VALIDATION_REPORT.md) - Validation Phase 4
+
+---
+
+## 🗺️ Roadmap
+
+### Version Actuelle : 0.2.4
+
+- ✅ Système de profils d'experts (9 profils)
+- ✅ Mémoire augmentée multi-sources
+- ✅ Génération de documents (PDF, DOCX, Markdown)
+- ✅ Connexion bases de données externes
+- ✅ Interface moderne et responsive
+
+### Version 0.3.0 (Q1 2025)
+
+- 🔄 Mode collaboratif multi-utilisateurs
+- 🔄 Plugins et extensions
+- 🔄 Support de modèles IA locaux (Ollama)
+- 🔄 Mode mobile (iOS, Android)
+
+### Version 1.0.0 (Q2 2025)
+
+- 📋 API publique documentée
+- 📋 Marketplace de workflows
+- 📋 Intégrations tierces (Slack, Teams, Notion)
+- 📋 Analytics et insights d'utilisation
+
+---
+
+## 🤝 Communauté et Support
+
+### Obtenir de l'Aide
+
+- **Issues GitHub** : [github.com/roblucci9302/Lucide-3/issues](https://github.com/roblucci9302/Lucide-3/issues)
+- **Discussions** : [github.com/roblucci9302/Lucide-3/discussions](https://github.com/roblucci9302/Lucide-3/discussions)
+- **Documentation** : Dossier `/docs` du projet
+
+### Contribuer au Projet
+
+Nous recherchons des contributeurs pour :
+
+- ✨ Nouvelles fonctionnalités
+- 🐛 Corrections de bugs
+- 📖 Documentation
+- 🌍 Traductions (i18n)
+- 🧪 Tests
+
+Consultez les [issues avec le label "help wanted"](https://github.com/roblucci9302/Lucide-3/issues?q=is%3Aissue+state%3Aopen+label%3A%22help+wanted%22) pour commencer.
+
+---
+
+## 📄 Licence
+
+Ce projet est sous licence **GNU General Public License v3.0**.
+
+Vous êtes libre de :
+- ✅ Utiliser Lucide à des fins personnelles et commerciales
+- ✅ Modifier le code source
+- ✅ Distribuer des copies modifiées
+
+Conditions :
+- 📋 Le code source doit rester open source
+- 📋 Les modifications doivent être documentées
+- 📋 La même licence doit être utilisée pour les versions dérivées
+
+Voir [LICENSE](./LICENSE) pour plus de détails.
+
+---
+
+## 🙏 Remerciements
+
+Lucide est construit sur les épaules de géants :
+
+- **Inspiration** : Projet [Glass by Pickle](https://github.com/pickle-com/glass) et [CheatingDaddy](https://github.com/sohzm/cheating-daddy)
+- **Technologies** : Electron, OpenAI, Google, Anthropic, et l'écosystème open source
+- **Contributeurs** : Merci à tous ceux qui ont contribué au projet
+
+---
+
+## 📞 Contact
+
+**Projet** : Lucide - Assistant IA Contextuel
+**Version** : 0.2.4
+**Licence** : GPL-3.0
+**Repository** : [github.com/roblucci9302/Lucide-3](https://github.com/roblucci9302/Lucide-3)
+
+---
+
+**Fait avec ❤️ pour démocratiser l'accès à l'intelligence artificielle contextuelle.**
