@@ -15,8 +15,8 @@
     "database",
     "security"
   ],
-  "author": "Pickle Team",
-  "license": "GPL-3.0",
+  "author": "Robespierre Ganro",
+  "license": "PROPRIETARY",
   "dependencies": {
     "express": "^4.19.2",
     "cors": "^2.8.5",

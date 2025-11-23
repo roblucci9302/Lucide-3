@@ -2,7 +2,7 @@
 
 **Assistant IA Contextuel et Ultra-Personnalisé**
 
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](LICENSE)
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.2.4-green.svg)](package.json)
 
 ---
@@ -443,29 +443,38 @@ Consultez les [issues avec le label "help wanted"](https://github.com/roblucci93
 
 ## 📄 Licence
 
-Ce projet est sous licence **GNU General Public License v3.0**.
+Ce projet est sous **Licence Propriétaire**.
 
-Vous êtes libre de :
-- ✅ Utiliser Lucide à des fins personnelles et commerciales
-- ✅ Modifier le code source
-- ✅ Distribuer des copies modifiées
+**Copyright © 2025 Robespierre Ganro. Tous droits réservés.**
 
-Conditions :
-- 📋 Le code source doit rester open source
-- 📋 Les modifications doivent être documentées
-- 📋 La même licence doit être utilisée pour les versions dérivées
+### Utilisation Autorisée
 
-Voir [LICENSE](./LICENSE) pour plus de détails.
+- ✅ Évaluation et usage personnel (non-commercial)
+
+### Restrictions
+
+- ❌ Utilisation commerciale sans autorisation écrite
+- ❌ Distribution ou redistribution du logiciel
+- ❌ Modification du code source
+- ❌ Rétro-ingénierie ou décompilation
+- ❌ Création de produits dérivés
+
+### Licence Commerciale
+
+Pour toute utilisation commerciale de Lucide, une licence commerciale distincte est requise.
+
+**Contact pour licences commerciales** : Robespierre Ganro
+
+Voir [LICENSE](./LICENSE) pour tous les détails juridiques.
 
 ---
 
 ## 🙏 Remerciements
 
-Lucide est construit sur les épaules de géants :
+Lucide utilise des technologies de pointe :
 
-- **Inspiration** : Projet [Glass by Pickle](https://github.com/pickle-com/glass) et [CheatingDaddy](https://github.com/sohzm/cheating-daddy)
-- **Technologies** : Electron, OpenAI, Google, Anthropic, et l'écosystème open source
-- **Contributeurs** : Merci à tous ceux qui ont contribué au projet
+- **Technologies** : Electron, OpenAI, Google Gemini, Anthropic Claude, et l'écosystème open source
+- **Développement** : Conçu et développé par Robespierre Ganro
 
 ---
 
@@ -473,7 +482,8 @@ Lucide est construit sur les épaules de géants :
 
 **Projet** : Lucide - Assistant IA Contextuel
 **Version** : 0.2.4
-**Licence** : GPL-3.0
+**Auteur** : Robespierre Ganro
+**Licence** : Propriétaire
 **Repository** : [github.com/roblucci9302/Lucide-3](https://github.com/roblucci9302/Lucide-3)
 
 ---

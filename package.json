@@ -39,9 +39,9 @@
         "assistant ia"
     ],
     "author": {
-        "name": "Pickle Team"
+        "name": "Robespierre Ganro"
     },
-    "license": "GPL-3.0",
+    "license": "PROPRIETARY",
     "dependencies": {
         "@anthropic-ai/sdk": "^0.56.0",
         "@deepgram/sdk": "^4.9.1",
