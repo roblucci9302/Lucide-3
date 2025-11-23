@@ -16,8 +16,8 @@
     "api",
     "sync"
   ],
-  "author": "Pickle Team",
-  "license": "GPL-3.0",
+  "author": "Robespierre Ganro",
+  "license": "PROPRIETARY",
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
     "express": "^4.19.2",
